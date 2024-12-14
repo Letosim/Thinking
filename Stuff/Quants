@@ -123,5 +123,4 @@ if (localType == 3)
 			delta = GetActivationValue(value, type, useThershold);
         }
     }
-
 }

@@ -105,12 +105,12 @@ if (localType == 3)
             // Map prime number to quantum state
             switch (quantumState)??????
             {
-                case 'u': activationValue += 2; break;   // Up quark (prime = 2)
-                case 'd': activationValue += 3; break;   // Down quark (prime = 3)
-                case 'c': activationValue += 5; break;   // Charm quark (prime = 5)
-                case 's': activationValue += 7; break;   // Strange quark (prime = 7)
-                case 't': activationValue += 11; break;  // Top quark (prime = 11)
-                case 'b': activationValue += 13; break;  // Bottom quark (prime = 13)
+                case 'u': activationValue = 2; break;   // Up quark (prime = 2)
+                case 'd': activationValue = 3; break;   // Down quark (prime = 3)
+                case 'c': activationValue = 5; break;   // Charm quark (prime = 5)
+                case 's': activationValue = 7; break;   // Strange quark (prime = 7)
+                case 't': activationValue = 11; break;  // Top quark (prime = 11)
+                case 'b': activationValue = 13; break;  // Bottom quark (prime = 13)
                 default: 0;  // Handle undefined states
             }
 

@@ -92,7 +92,7 @@ Explanation:
 
 By using prime numbers, you not only differentiate the influence of each state but also introduce a unique characteristic into the network’s behavior, potentially improving the model’s ability to recognize patterns or features related to these quantum states.
 
-Thinking ############################################
+Thinking ############################################ Also not sure about Quantum entaglement and also communication!?
 
 if (localType == 3)
 {

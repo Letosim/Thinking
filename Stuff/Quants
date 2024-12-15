@@ -219,14 +219,14 @@ Still think didnt test this but...????
       float distance = 0;
 
       for (int i = 0; i < particles.Count; i++)
-          distance += (Mathf.Abs(spaces.[i]) + Mathf.Abs(space)) / 2f;
+          distance += (Mathf.Abs(vector.[i]) + Mathf.Abs(vector)) / 2f;
 
       float momentumChange = 0;
 
       distance = distance * distance;
 
       for (int i = 0; i < particles.Count; i++)
-          strange += (spaces.[i] - space) * (P_System.gravitationalConstant * distance * this.aether);
+          strange += (vector.[i] - vector) * (P_System.gravitationalConstant * distance * this.aether);
 
       for (int i = 0; i < particles.Count; i++)
           momentumChange += particles[i].aether / strange;
@@ -237,5 +237,5 @@ Still think didnt test this but...????
 
       DrawTrail();// dividable to two or three dimensions... one is line
 
-      space += momentum;
+      vector += momentum;
   }

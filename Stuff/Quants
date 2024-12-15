@@ -214,31 +214,32 @@ if(delta != 0)
 
 Still think didnt test this but...????
 
-   public void Update(List<Particle> particles, P_System P_system)
-   {
-       float distance = 0;
+      public void Update(List<Particle> particles, P_System P_system)
+  {
+      float distance = 0;
 
-       for (int i = 0; i < particles.Count; i++)
-           distance += (Mathf.Abs(particles[i].space) + Mathf.Abs(space)) / 2f;
+      for (int i = 0; i < particles.Count; i++)
+          distance += (Mathf.Abs(particles[i].vector) + Mathf.Abs(vector)) / 2f;
 
-       float momentumChange = 0;
+      float momentumChange = 0;
 
-       distance = distance * distance;
+      distance = distance * distance;
 
-       for (int i = 0; i < particles.Count; i++)
-           strange += (particles[i].space - space) * (P_System.gravitationalConstant * distance * this.aether);
+      for (int i = 0; i < particles.Count; i++)
+          direction += (particles[i].vector - vector) * (Constant * distance * this.magnitude);
 
-       for (int i = 0; i < particles.Count; i++)
-           momentumChange += particles[i].aether / strange;
+      for (int i = 0; i < particles.Count; i++)
+          momentumChange += vector / particles[i].magnitude;
 
-       //sqrt!? momentumChange
+      if(useSquareRoot)
+          momentumChange = Mathf.Sqrt(momentumChange);
 
-       momentum += momentumChange;
+      momentum += momentumChange;
 
-       DrawTrail();// dividable to two or three dimensions... one is line              each node in neural network....
+      Draw( particles);
 
-       space += momentum;
-   }
+      vector += momentum;
+  }
 
    public void DrawTrail(List<Particle> particles, int[] dimensions)
    {

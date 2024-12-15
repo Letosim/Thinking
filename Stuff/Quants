@@ -242,7 +242,6 @@ Still think didnt test this but...????
 
    public void DrawTrail(List<Particle> particles, int[] dimensions)
    {
-       int particleCount = particles.Count;
        int index = 0;
    
        for (int i = 0; i < dimensions.Length; i++)
@@ -254,7 +253,7 @@ Still think didnt test this but...????
            }
            if (dimensions[i] == 2)
            {  
-               Debug.DrawLine(new Vector3(particles[0 + index].vector, 0, particles[1 + index].vector), new Vector3(particles[0 + index].vector - particles[0 + index].momentum, 0, particles[0 + index].vector - particles[1 + index].momentum), Color.cyan, 15f);
+               Debug.DrawLine(new Vector3(particles[0 + index].vector, 0, particles[1 + index].vector), new Vector3(particles[0 + index].vector - particles[0 + index].momentum, 0, particles[0 + index].vector - particles[1 + index].momentum), Color.cyan, 15f);//FanType!?
                index += 2;
            }
            if (dimensions[i] == 3)

@@ -250,14 +250,12 @@ Still think didnt test this but...????
               if (dimensions[i] == 1)
               { 
                   Debug.DrawLine(new Vector3(uID, 0, 0), new Vector3(uID, space, 0), Color.cyan); 
-
+                  index += 1;
               }
               if (dimensions[i] == 2)
               {  
                   Debug.DrawLine(new Vector3(particles[0 + index].vector, 0, particles[1 + index].vector), new Vector3(particles[0 + index].vector - particles[0 + index].momentum, 0, particles[0 + index].vector - particles[1 + index].momentum), Color.cyan, 15f);//particles[0] + particles[1]
                   index += 2;
-
-
               }
               if (dimensions[i] == 3)
               {

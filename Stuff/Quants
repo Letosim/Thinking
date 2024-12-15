@@ -197,7 +197,8 @@ if(delta != 0)
                 case 't': activationValue = 11; break;  // Top quark (prime = 11)
                 case 'b': activationValue = 13; break;  // Bottom quark (prime = 13)
                 default: 0;  // Handle undefined states
-            }
+            }
+
 
 	for (int v = 0; v < vectorCount; v++)
         	for (int o = 0; o < vectorCount; o++)                                                      	
@@ -210,3 +211,38 @@ if(delta != 0)
         }
     }
 }
+
+Still think didnt test this but...????
+
+
+      public void Update(List<Particle> particles, P_System P_system)
+      {
+          float distance;
+
+          for (int i = 0; i < particles.Count; i++)
+          {
+              distance += (Mathf.Abs(spaces.[i]) + Mathf.Abs(space)) / 2f;
+
+              distance *= distance;
+
+              for (int i = 0; i < space.Count; i++)
+              { 
+                              //spaces....max value!?
+                  velocity += (spaces[i] - space) * ((strange + P_System.gravitationalConstant * particles[i].aether) / distance);
+              }
+          }
+
+          float d = 0;
+
+          d += (space) * ((mass + P_System.gravitationalConstant * distance * this.aether;
+
+          for(int i = 0; i < particles.Count; i ++)
+             d * this.aether particles[i].aether
+
+
+          momentum += d;
+
+          DrawTrail();// dividable to two or three dimensions... one is line
+
+          space += momentum;
+      }

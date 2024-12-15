@@ -214,28 +214,28 @@ if(delta != 0)
 
 Still think didnt test this but...????
 
-  public void Update(List<Particle> particles, P_System P_system)
-  {
-      float distance = 0;
+   public void Update(List<Particle> particles, P_System P_system)
+   {
+       float distance = 0;
 
-      for (int i = 0; i < particles.Count; i++)
-          distance += (Mathf.Abs(vector.[i]) + Mathf.Abs(vector)) / 2f;
+       for (int i = 0; i < particles.Count; i++)
+           distance += (Mathf.Abs(particles[i].space) + Mathf.Abs(space)) / 2f;
 
-      float momentumChange = 0;
+       float momentumChange = 0;
 
-      distance = distance * distance;
+       distance = distance * distance;
 
-      for (int i = 0; i < particles.Count; i++)
-          strange += (vector.[i] - vector) * (P_System.gravitationalConstant * distance * this.aether);
+       for (int i = 0; i < particles.Count; i++)
+           strange += (particles[i].space - space) * (P_System.gravitationalConstant * distance * this.aether);
 
-      for (int i = 0; i < particles.Count; i++)
-          momentumChange += particles[i].aether / strange;
+       for (int i = 0; i < particles.Count; i++)
+           momentumChange += particles[i].aether / strange;
 
-      //sqrt!? momentumChange
+       //sqrt!? momentumChange
 
-      momentum += momentumChange;
+       momentum += momentumChange;
 
-      DrawTrail();// dividable to two or three dimensions... one is line...  each node in a neural network.?. art!?
+       DrawTrail();// dividable to two or three dimensions... one is line              each node in neural network....
 
-      vector += momentum;
-  }
+       space += momentum;
+   }

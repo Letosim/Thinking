@@ -293,3 +293,32 @@ Still think didnt test this but...????
        }
    }
 
+    public void Draw(List<Particle> particles, int[] dimensions)
+    {
+        int index = 0;
+
+        for (int i = 0; i < dimensions.Length; i++)
+        {
+            if (dimensions[i] == 1)
+            {
+                Debug.DrawLine(new Vector3(uID, -drawSize, 0), new Vector3(uID, +drawSize, 0), Color.cyan);
+                Debug.DrawLine(new Vector3(uID - drawSize, 0, 0), new Vector3(uID + drawSize, 0, 0), Color.cyan);
+                Debug.DrawLine(new Vector3(uID, 0, -drawSize), new Vector3(uID, 0, drawSize), Color.cyan);
+                index += 1;
+            }
+
+            if (dimensions[i] == 2)
+            {
+                Debug.DrawLine(new Vector3(particles[0 + index].vector - drawSize, 0, particles[1 + index].vector), new Vector3(particles[0 + index].vector + drawSize, 0, particles[1 + index].vector), Color.cyan);
+                index += 2;
+            }
+
+            if (dimensions[i] == 3)
+            {
+                Debug.DrawLine(new Vector3(particles[0 + index].vector, particles[1 + index].vector - drawSize, particles[2 + index].vector), new Vector3(particles[0 + index].vector, particles[1 + index].vector + drawSize, particles[2 + index].vector), Color.cyan);
+                Debug.DrawLine(new Vector3(particles[0 + index].vector - drawSize, particles[1 + index].vector, particles[2 + index].vector), new Vector3(particles[0 + index].vector + drawSize, particles[1 + index].vector, particles[2 + index].vector), Color.cyan);
+                Debug.DrawLine(new Vector3(particles[0 + index].vector, particles[1 + index].vector, particles[2 + index].vector - drawSize), new Vector3(particles[0 + index].vector, particles[1 + index].vector, particles[2 + index].vector + drawSize), Color.cyan);
+                index += 3;
+            }
+        }
+    }

@@ -257,7 +257,7 @@ Still think didnt test this but...????
              direction += (particles[i].vector - vector) * (Constant * distance * this.magnitude);
 
          for (int i = 0; i < particles.Count; i++)
-             momentumChange += vector / particles[i].magnitude;
+             momentumChange += direction / particles[i].magnitude;
 
          if(useSquareRoot)
              momentumChange = Mathf.Sqrt(momentumChange);

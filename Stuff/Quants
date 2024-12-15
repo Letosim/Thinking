@@ -253,8 +253,6 @@ Still think didnt test this but...????
 
          float momentumChange = 0;
 
-         distance = distance * distance;
-
          for (int i = 0; i < particles.Count; i++)
              direction += (particles[i].vector - vector) * (Constant * distance * this.magnitude);
 

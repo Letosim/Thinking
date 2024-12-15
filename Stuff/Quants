@@ -249,7 +249,7 @@ Still think didnt test this but...????
           {
               if (dimensions[i] == 1)
               { 
-                  Debug.DrawLine(new Vector3(uID, 0, 0), new Vector3(uID, space, 0), Color.cyan); 
+                  Debug.DrawLine(new Vector3(uID, 0, 0), new Vector3(uID, space, 0), Color.cyan, 15f);
                   index += 1;
               }
               if (dimensions[i] == 2)

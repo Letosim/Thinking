@@ -147,3 +147,46 @@ Ten Dimensions:
 Still thinking StarTrek!? https://en.wikipedia.org/wiki/String_theory#cite_note-Becker,_Becker_2007,_pp._2-4
 
 In a viable model of particle physics, the compact extra dimensions must be shaped like a Calabi–Yau manifold.[22] A Calabi–Yau manifold is a special space which is typically taken to be six-dimensional in applications to string theory. It is named after mathematicians Eugenio Calabi and Shing-Tung Yau.[23]
+
+
+
+
+
+if (localType == 3)
+{
+    float activationValue = 0;
+
+    for (int n = 0; n < neurodes.Count; n++)
+    {
+        for (int v = 0; v < vectorCount; v++)
+        {
+            // Map prime number to quantum state
+            switch (quantumState)??????
+            {
+                case 'u': activationValue = 2; break;   // Up quark (prime = 2)
+                case 'd': activationValue = 3; break;   // Down quark (prime = 3)
+                case 'c': activationValue = 5; break;   // Charm quark (prime = 5)
+                case 's': activationValue = 7; break;   // Strange quark (prime = 7)
+                case 't': activationValue = 11; break;  // Top quark (prime = 11)
+                case 'b': activationValue = 13; break;  // Bottom quark (prime = 13)
+                default: 0;  // Handle undefined states
+            }
+
+	float value;
+
+	for (int v = 0; v < vectorCount; v++)
+        	for (int o = 0; o < vectorCount; o++)                                                        		
+			value = activationValue * weightMatrix[o][v] + biasVector[o][v];
+
+			delta = GetActivationValue(value, type, useThershold);
+
+
+
+if(delta != 0)//entangled!?
+{
+
+}
+
+        }
+    }
+}

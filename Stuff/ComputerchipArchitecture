@@ -328,18 +328,39 @@ This could lead to exciting findings in computation, wave physics, or even art-m
 
 Fields on cut off collums?
 
-Also a neurode based on a float array [,,]
-game of life and prime numbers!?!?!?!?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 //??????????????????????????????
+Also a neurode based on a float array [,,]
+game of life and prime numbers!?!?!?!?
+
 
        719----721
         |      |
-in = 47-| time |- out = ?
+in = 47-| time |-?[...]?- out = ?
         |      | 
        709----701
+
 
 for example in = Activationsvalue * 100;
 

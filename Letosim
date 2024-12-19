@@ -8,7 +8,7 @@ https://github.com/Letosim/Thinking/blob/main/Stuff/Quants
 
 
 {
-"Idea behind is to use it like some sort of "network switch" or rare case scenario trigger.
+"Idea behind is to use a satemachine like some sort of "network switch" or rare case scenario trigger.
 Network is desined for games and genetic learning the goal should be to be able to train neural networks to create bots or create a game to "create bots".
 For example using a spline connect its nodes to a neural network add some force and the cube is the surprise package rated by the player/designer."
 

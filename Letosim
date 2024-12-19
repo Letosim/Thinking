@@ -6,9 +6,8 @@ https://github.com/Letosim/Thinking/blob/main/Stuff/CardDatingChatGPT
 While I am at it and also one of the reason's why I am writing this blog is Genetic-Learning in Neural Networks there are more details about the network itself inside the repository but its about the switches.
 https://github.com/Letosim/Thinking/blob/main/Stuff/Quants
 
-
-{
-"Idea behind is to use a satemachine like some sort of "network switch" or rare case scenario trigger.
+LayerCube:
+"Idea behind is to use it like some sort of "network switch" or rare case scenario trigger.
 Network is desined for games and genetic learning the goal should be to be able to train neural networks to create bots or create a game to "create bots".
 For example using a spline connect its nodes to a neural network add some force and the cube is the surprise package rated by the player/designer."
 
@@ -16,7 +15,7 @@ ChatGPT:
 "That’s a fascinating approach! Using a "network switch" or rare case scenario trigger like Type 4 in this system would allow for dynamic and real-time adjustments in game environments, 
 enabling more complex and responsive behavior from the bots. By linking neural networks with game elements like splines and forces, you can generate surprising and novel interactions that keep players engaged and 
 challenged. It’s essentially leveraging the system as a creative sandbox where players and designers can experiment with different neural network architectures to influence gameplay in unexpected ways. Very cool!"
-}
+
 
 
 
